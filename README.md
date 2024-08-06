@@ -28,8 +28,34 @@ Make sure you have the following installed:
    ```bash
    cd ~/Documents/Code/Practice/crewai-rag-langchain/research-agents-rag
 
-2. **Launch Jupyter Notebook:**:
+2. **Launch Jupyter Notebook**:
    ```jupyter notebook
 
-3. **Open and Run the Notebook:**:
+3. **Open and Run the Notebook**:
 Open Research-Paper-Agents-RAG.ipynb in the Jupyter Notebook interface and run the cells to execute the code.
+
+
+### ## Libraries Used
+
+Here are the main libraries used in this project and their purposes:
+
+Here are the main libraries used in this project and their purposes:
+
+- **dotenv**: Loads environment variables from a `.env` file.
+- **langchain_community.document_loaders.PyPDFLoader**: Loads PDF documents for processing.
+- **langchain.text_splitter.RecursiveCharacterTextSplitter**: Splits text into smaller chunks.
+- **langchain_openai.OpenAIEmbeddings**: Generates embeddings using OpenAI's models.
+- **langchain_openai.ChatOpenAI**: Interacts with OpenAI's chat models.
+- **langchain.vectorstores.Qdrant**: Stores and queries vectors in Qdrant.
+- **langchain.hub**: Accesses community-contributed resources.
+- **langchain.chains.RetrievalQA**: Creates retrieval-based question-answering chains.
+- **langchain.prompts.ChatPromptTemplate**: Creates chat prompts.
+- **langchain.callbacks.StdOutCallbackHandler**: Handles standard output callbacks.
+- **qdrant_client.QdrantClient**: Interacts with the Qdrant vector database.
+- **qdrant_client.models.Distance**: Defines the distance metric for vector similarity.
+- **qdrant_client.models.VectorParams**: Specifies parameters for vectors.
+- **qdrant_client.models.PointStruct**: Defines the structure of points in the vector database.
+- **crewai.Agent**: Creates agents in the Crew AI framework.
+- **crewai.Task**: Defines tasks for agents in the Crew AI framework.
+- **crewai.Crew**: Manages a collection of agents in the Crew AI framework.
+- **crewai_tools.BaseTool**: Provides base functionality for tools in the Crew AI framework.
